@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+@theme {
+    --font-poppins: Poppins, sans-serif;
+
+    --color-shujia-gray: #43484c;
+    --color-shujia-gray-light: #e4e5e9;
+    --color-shujia-orange: #d04b1e;
+    --color-shujia-black: #030504;
+    --color-shujia-almost-white: #dae1e9;
+}
