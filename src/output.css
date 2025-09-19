@@ -181,6 +181,9 @@
   .flex-col {
     flex-direction: column;
   }
+  .gap-\[30px\] {
+    gap: 30px;
+  }
   .gap-\[40px\] {
     gap: 40px;
   }
