@@ -7,14 +7,16 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-50: oklch(98.7% 0.022 95.277);
     --color-white: #fff;
+    --spacing: 0.25rem;
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
     --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --color-shujia-gray-light: #e4e5e9;
     --color-shujia-orange: #d04b1e;
-    --color-shujia-black: #030504;
   }
 }
 @layer base {
@@ -166,8 +168,29 @@
   }
 }
 @layer utilities {
+  .absolute {
+    position: absolute;
+  }
+  .fixed {
+    position: fixed;
+  }
   .relative {
     position: relative;
+  }
+  .top-0 {
+    top: calc(var(--spacing) * 0);
+  }
+  .top-5 {
+    top: calc(var(--spacing) * 5);
+  }
+  .right-0 {
+    right: calc(var(--spacing) * 0);
+  }
+  .left-0 {
+    left: calc(var(--spacing) * 0);
+  }
+  .z-30 {
+    z-index: 30;
   }
   .mx-auto {
     margin-inline: auto;
@@ -175,11 +198,47 @@
   .flex {
     display: flex;
   }
+  .h-\[40px\] {
+    height: 40px;
+  }
+  .h-\[44px\] {
+    height: 44px;
+  }
+  .h-\[349\.02px\] {
+    height: 349.02px;
+  }
+  .w-\[44px\] {
+    width: 44px;
+  }
+  .w-\[114px\] {
+    width: 114px;
+  }
+  .w-full {
+    width: 100%;
+  }
   .max-w-\[640px\] {
     max-width: 640px;
   }
+  .flex-0 {
+    flex: 0;
+  }
+  .shrink-0 {
+    flex-shrink: 0;
+  }
   .flex-col {
     flex-direction: column;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .gap-\[10px\] {
+    gap: 10px;
   }
   .gap-\[30px\] {
     gap: 30px;
@@ -190,35 +249,53 @@
   .overflow-hidden {
     overflow: hidden;
   }
-  .bg-shujia-orange {
-    background-color: var(--color-shujia-orange);
+  .rounded-\[22px\] {
+    border-radius: 22px;
+  }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .border-shujia-gray-light {
+    border-color: var(--color-shujia-gray-light);
+  }
+  .bg-amber-50 {
+    background-color: var(--color-amber-50);
   }
   .bg-white {
     background-color: var(--color-white);
   }
+  .object-cover {
+    object-fit: cover;
+  }
+  .object-bottom {
+    object-position: bottom;
+  }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
+  }
+  .px-5 {
+    padding-inline: calc(var(--spacing) * 5);
+  }
+  .py-\[14px\] {
+    padding-block: 14px;
+  }
   .pb-\[142px\] {
     padding-bottom: 142px;
   }
-  .text-3xl {
-    font-size: var(--text-3xl);
-    line-height: var(--tw-leading, var(--text-3xl--line-height));
-  }
-  .font-bold {
-    --tw-font-weight: var(--font-weight-bold);
-    font-weight: var(--font-weight-bold);
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
 }
-@property --tw-font-weight {
+@property --tw-border-style {
   syntax: "*";
   inherits: false;
+  initial-value: solid;
 }
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-      --tw-font-weight: initial;
+      --tw-border-style: solid;
     }
   }
 }

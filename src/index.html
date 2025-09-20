@@ -11,8 +11,34 @@
         <title>Shujia | Home Service</title>
     </head>
     <body class="relative mx-auto flex max-w-[640px] flex-col gap-[40px] overflow-hidden bg-white pb-[142px]">
-        <div id="Background"></div>
-        <section id="NavTop"></section>
+        <div id="Background" class="absolute top-0 right-0 left-0">
+            <img src="assets/images/backgrounds/home-banner.png" class="h-[349.02px] w-full object-cover object-bottom" />
+        </div>
+        <section id="NavTop" class="fixed top-5 right-0 left-0 z-30">
+            <div class="mx-auto max-w-[640px] px-5">
+                <div class="flex items-center justify-between rounded-[22px] bg-white px-4 py-[14px]">
+                    <a href="#" class="shrink-0">
+                        <img src="assets/images/logos/company.svg" class="h-[40px] w-[114px]" />
+                    </a>
+                    <ul class="flex items-center gap-[10px]">
+                        <li class="shrink-0">
+                            <a href="#">
+                                <div class="flex h-[44px] w-[44px] items-center justify-center rounded-full border border-shujia-gray-light">
+                                    <img src="assets/images/icons/notification.svg" alt="" />
+                                </div>
+                            </a>
+                        </li>
+                        <li class="shrink-0">
+                            <a href="#">
+                                <div class="flex h-[44px] w-[44px] items-center justify-center rounded-full border border-shujia-gray-light">
+                                    <img src="assets/images/icons/cart.svg" alt="" />
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
         <header></header>
         <div id="Container" class="flex flex-col gap-[30px]">
             <section id="Categories"></section>
