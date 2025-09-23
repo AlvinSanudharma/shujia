@@ -7,8 +7,11 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-50: oklch(98.7% 0.022 95.277);
     --color-white: #fff;
     --spacing: 0.25rem;
+    --text-xs: 0.75rem;
+    --text-xs--line-height: calc(1 / 0.75);
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
     --font-weight-semibold: 600;
@@ -188,8 +191,14 @@
   .top-5 {
     top: calc(var(--spacing) * 5);
   }
+  .top-\[26px\] {
+    top: 26px;
+  }
   .right-0 {
     right: calc(var(--spacing) * 0);
+  }
+  .right-\[26px\] {
+    right: 26px;
   }
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
@@ -212,8 +221,20 @@
   .mt-\[128px\] {
     margin-top: 128px;
   }
+  .mb-10 {
+    margin-bottom: calc(var(--spacing) * 10);
+  }
+  .mb-20 {
+    margin-bottom: calc(var(--spacing) * 20);
+  }
   .ml-5 {
     margin-left: calc(var(--spacing) * 5);
+  }
+  .line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
   }
   .flex {
     display: flex;
@@ -236,11 +257,20 @@
   .h-\[130px\] {
     height: 130px;
   }
+  .h-\[140px\] {
+    height: 140px;
+  }
+  .h-\[300px\] {
+    height: 300px;
+  }
   .h-\[349\.02px\] {
     height: 349.02px;
   }
   .h-full {
     height: 100%;
+  }
+  .min-h-\[48px\] {
+    min-height: 48px;
   }
   .\!w-fit {
     width: fit-content !important;
@@ -259,6 +289,9 @@
   }
   .w-\[114px\] {
     width: 114px;
+  }
+  .w-\[230px\] {
+    width: 230px;
   }
   .w-\[246px\] {
     width: 246px;
@@ -299,6 +332,9 @@
   .gap-\[10px\] {
     gap: 10px;
   }
+  .gap-\[12px\] {
+    gap: 12px;
+  }
   .gap-\[30px\] {
     gap: 30px;
   }
@@ -312,11 +348,24 @@
       margin-block-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-y-reverse)));
     }
   }
+  .space-y-\[14px\] {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(14px * var(--tw-space-y-reverse));
+      margin-block-end: calc(14px * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
   .overflow-hidden {
     overflow: hidden;
   }
+  .overflow-scroll {
+    overflow: scroll;
+  }
   .overflow-x-hidden {
     overflow-x: hidden;
+  }
+  .rounded-\[16px\] {
+    border-radius: 16px;
   }
   .rounded-\[22px\] {
     border-radius: 22px;
@@ -334,6 +383,9 @@
   .border-shujia-gray-light {
     border-color: var(--color-shujia-gray-light);
   }
+  .border-b-shujia-gray-light {
+    border-bottom-color: var(--color-shujia-gray-light);
+  }
   .bg-\[\#E3DDFF\] {
     background-color: #E3DDFF;
   }
@@ -342,6 +394,9 @@
   }
   .bg-\[\#FFD1AD\] {
     background-color: #FFD1AD;
+  }
+  .bg-amber-50 {
+    background-color: var(--color-amber-50);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -352,6 +407,12 @@
   .object-bottom {
     object-position: bottom;
   }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
+  }
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
@@ -361,14 +422,23 @@
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
   }
+  .py-\[7px\] {
+    padding-block: 7px;
+  }
   .py-\[14px\] {
     padding-block: 14px;
   }
   .ps-\[147px\] {
     padding-inline-start: 147px;
   }
+  .pb-10 {
+    padding-bottom: calc(var(--spacing) * 10);
+  }
   .pb-\[142px\] {
     padding-bottom: 142px;
+  }
+  .pl-5 {
+    padding-left: calc(var(--spacing) * 5);
   }
   .text-center {
     text-align: center;
@@ -376,6 +446,10 @@
   .text-sm {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-xs {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
   }
   .text-\[18px\] {
     font-size: 18px;
@@ -386,9 +460,17 @@
   .text-\[32px\] {
     font-size: 32px;
   }
+  .leading-\[18px\] {
+    --tw-leading: 18px;
+    line-height: 18px;
+  }
   .leading-\[21px\] {
     --tw-leading: 21px;
     line-height: 21px;
+  }
+  .leading-\[27px\] {
+    --tw-leading: 27px;
+    line-height: 27px;
   }
   .leading-\[46px\] {
     --tw-leading: 46px;
