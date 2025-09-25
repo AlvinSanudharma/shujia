@@ -7,13 +7,14 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-100: oklch(96.2% 0.059 95.617);
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-xs: 0.75rem;
     --text-xs--line-height: calc(1 / 0.75);
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --font-weight-extrabold: 800;
@@ -206,6 +207,9 @@
   .right-0 {
     right: calc(var(--spacing) * 0);
   }
+  .right-5 {
+    right: calc(var(--spacing) * 5);
+  }
   .right-\[26px\] {
     right: 26px;
   }
@@ -218,6 +222,9 @@
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
+  .left-\[20\.5px\] {
+    left: 20.5px;
+  }
   .left-\[40px\] {
     left: 40px;
   }
@@ -226,6 +233,12 @@
   }
   .mx-auto {
     margin-inline: auto;
+  }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
+  .mt-\[100px\] {
+    margin-top: 100px;
   }
   .mt-\[128px\] {
     margin-top: 128px;
@@ -269,20 +282,17 @@
   .h-\[140px\] {
     height: 140px;
   }
+  .h-\[228px\] {
+    height: 228px;
+  }
   .h-\[349\.02px\] {
     height: 349.02px;
   }
-  .h-\[500px\] {
-    height: 500px;
-  }
-  .h-\[5000px\] {
-    height: 5000px;
-  }
-  .h-\[10000px\] {
-    height: 10000px;
-  }
   .h-full {
     height: 100%;
+  }
+  .max-h-\[228px\] {
+    max-height: 228px;
   }
   .min-h-\[48px\] {
     min-height: 48px;
@@ -403,6 +413,9 @@
   .rounded-\[24px\] {
     border-radius: 24px;
   }
+  .rounded-\[40px\] {
+    border-radius: 40px;
+  }
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
@@ -449,6 +462,9 @@
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
+  .px-\[8px\] {
+    padding-inline: 8px;
+  }
   .px-\[16px\] {
     padding-inline: 16px;
   }
@@ -485,6 +501,10 @@
   .text-center {
     text-align: center;
   }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
   .text-sm {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
@@ -513,6 +533,10 @@
   .leading-\[27px\] {
     --tw-leading: 27px;
     line-height: 27px;
+  }
+  .leading-\[36px\] {
+    --tw-leading: 36px;
+    line-height: 36px;
   }
   .leading-\[46px\] {
     --tw-leading: 46px;
