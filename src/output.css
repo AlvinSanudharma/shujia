@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-100: oklch(96.2% 0.059 95.617);
     --color-amber-500: oklch(76.9% 0.188 70.08);
     --color-amber-800: oklch(47.3% 0.137 46.201);
     --color-amber-900: oklch(41.4% 0.112 45.904);
@@ -262,6 +263,12 @@
   .h-\[140px\] {
     height: 140px;
   }
+  .h-\[228\] {
+    height: 228;
+  }
+  .h-\[228px\] {
+    height: 228px;
+  }
   .h-\[349\.02px\] {
     height: 349.02px;
   }
@@ -403,14 +410,8 @@
   .bg-\[\#FFD1AD\] {
     background-color: #FFD1AD;
   }
-  .bg-amber-500 {
-    background-color: var(--color-amber-500);
-  }
-  .bg-amber-800 {
-    background-color: var(--color-amber-800);
-  }
-  .bg-amber-900 {
-    background-color: var(--color-amber-900);
+  .bg-amber-100 {
+    background-color: var(--color-amber-100);
   }
   .bg-shujia-black {
     background-color: var(--color-shujia-black);
@@ -462,6 +463,9 @@
   }
   .pb-\[142px\] {
     padding-bottom: 142px;
+  }
+  .pb-\[144px\] {
+    padding-bottom: 144px;
   }
   .pl-5 {
     padding-left: calc(var(--spacing) * 5);
@@ -549,14 +553,6 @@
     &:hover {
       @media (hover: hover) {
         --tw-shadow: 0px 4px 10px 0px var(--tw-shadow-color, #D04B1E80);
-        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-      }
-    }
-  }
-  .hover\:shadow-\[0px_4px_10px_0px_rgba\(208\,75\,30\,0\.5\)\] {
-    &:hover {
-      @media (hover: hover) {
-        --tw-shadow: 0px 4px 10px 0px var(--tw-shadow-color, rgba(208,75,30,0.5));
         box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
       }
     }
