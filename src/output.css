@@ -372,6 +372,9 @@
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
   .gap-\[2px\] {
     gap: 2px;
   }
@@ -471,6 +474,9 @@
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
+  .p-\[14px\] {
+    padding: 14px;
+  }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
   }
@@ -543,6 +549,10 @@
   .text-\[32px\] {
     font-size: 32px;
   }
+  .leading-7 {
+    --tw-leading: calc(var(--spacing) * 7);
+    line-height: calc(var(--spacing) * 7);
+  }
   .leading-\[18px\] {
     --tw-leading: 18px;
     line-height: 18px;
@@ -550,6 +560,10 @@
   .leading-\[21px\] {
     --tw-leading: 21px;
     line-height: 21px;
+  }
+  .leading-\[26px\] {
+    --tw-leading: 26px;
+    line-height: 26px;
   }
   .leading-\[27px\] {
     --tw-leading: 27px;
